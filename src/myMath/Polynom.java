@@ -11,7 +11,7 @@ import myMath.Monom;
  * 2. Finding a numerical value between two values (currently support root only f(x)=0).
  * 3. Derivative
  * 
- * @author Or Avital && Dana Mor
+ * @author Boaz
  *
  */
 public class Polynom implements Polynom_able{
@@ -242,23 +242,37 @@ public class Polynom implements Polynom_able{
 	}
 
 	@Override
-	//calculate the area of a given polynom
+	//  Calculate the area of given a polynom
 	public double area(double x0, double x1, double eps) {
 		double sumOfArea=0; //sums the area
 		for (double i = x0; i < x1; i+=eps) {
-			if(this.f(i)>0) sumOfArea+=this.f(i)*eps;		//sum up the area of the rectangle
+			if(this.f(i)>0) sumOfArea+=this.f(i)*eps;		//  Sum up the area of the rectangle
 		}		
-		return Math.abs(sumOfArea); //return the sum of the area
+		return Math.abs(sumOfArea); //  Return the sum of the area
+	}
+	
+	//  Calculate the Under area of given a polynom
+	public double areaUnder(double x0, double x1, double eps) {
+		double sumOfArea=0; // Sums the area
+		for (double i = x0; i < x1; i+=eps) {
+			if(this.f(i)<0) sumOfArea+=this.f(i)*eps;		//  Sum up the area of the rectangle
+		}		
+		return Math.abs(sumOfArea); //  Return the sum of the area
 	}
 
 	@Override
 	public Iterator<Monom> iteretor() {
-		return List.iterator();//creates iterator
+		return List.iterator();//  Creates iterator
 	}
 
+	/**
+	 * Draw this Polynom according range of user decision
+	 * @param a
+	 * @param b
+	 */
 	public void Graph(double a, double b) {
-		GraphPoints frame = new GraphPoints(this,a,b);
-		frame.setVisible(true);
+		GraphPoints frame = new GraphPoints(this,a,b); // Call Graphic class
+		frame.setVisible(true); // Set frame to be visible
 	}
 
 	public String toString() {
