@@ -29,4 +29,7 @@ Special edition
 --------
 new! now you can make a graph of the polynom
 
-
+more to read
+--------------
+- this project used GRAL open source: https://github.com/DanaSMor/gral.git
+- you can read more about Polynoms in Wiki: https://de.wikipedia.org/wiki/Polynom
