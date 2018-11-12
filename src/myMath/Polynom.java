@@ -11,7 +11,7 @@ import myMath.Monom;
  * 2. Finding a numerical value between two values (currently support root only f(x)=0).
  * 3. Derivative
  * 
- * @author Boaz
+ * @author Or Avital && Dana Mor
  *
  */
 public class Polynom implements Polynom_able{
