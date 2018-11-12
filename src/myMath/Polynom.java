@@ -2,6 +2,8 @@ package myMath;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import Graph.GraphPoints;
 import myMath.Monom;
 /**
  * This class represents a Polynom with add, multiply functionality, it also should support the following:
@@ -209,7 +211,7 @@ public class Polynom implements Polynom_able{
 
 	@Override
 	public double root(double x0, double x1, double eps) {
-		if(f(x0)*f(x1)>0||this.isZero())
+		if(f(x0)*f(x1)>0 || this.isZero())
 			throw new RuntimeException("invalid parameters: f(x0) and f(x1) should from oposite sides of x line");
 		if(Math.abs(f(x0))<eps) return x0;
 		if(Math.abs(f(x1))<eps) return x1;
@@ -221,7 +223,7 @@ public class Polynom implements Polynom_able{
 		}
 		return M;
 	}
-	
+
 	@Override
 	public Polynom_able copy() {                // Make a deep copy of our array use the constructor
 		return new Polynom(this);
@@ -252,6 +254,11 @@ public class Polynom implements Polynom_able{
 	@Override
 	public Iterator<Monom> iteretor() {
 		return List.iterator();//creates iterator
+	}
+
+	public void Graph(double a, double b) {
+		GraphPoints frame = new GraphPoints(this,a,b);
+		frame.setVisible(true);
 	}
 
 	public String toString() {
