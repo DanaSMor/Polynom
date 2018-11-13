@@ -36,6 +36,7 @@ public class GraphPoints extends JFrame {
 				temp = pD.root(x, x+0.20, 0.0001);     // Find the Min-Max Points accord with help of root function
 				MinMax.add(temp,p.f(temp)); // Add the points with a  different color of the point
 				data.add(temp,p.f(temp)); // Add it to the original graph points as well
+				System.out.println("x: "+temp+"y: "+p.f(temp));
 			}
 			else
 				data.add(x,y); // It's not Min-Max point so just add it as regular

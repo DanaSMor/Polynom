@@ -11,7 +11,7 @@ import myMath.Monom;
  * 2. Finding a numerical value between two values (currently support root only f(x)=0).
  * 3. Derivative
  * 
- * @author Boaz
+ * @author Or Avital and Dana Morhaim
  *
  */
 public class Polynom implements Polynom_able{
@@ -266,9 +266,9 @@ public class Polynom implements Polynom_able{
 	}
 
 	/**
-	 * Draw this Polynom according range of user decision
-	 * @param a
-	 * @param b
+	 * Draw a Polynom in a specified range of user decision
+	 * @param a - x0
+	 * @param b - x1
 	 */
 	public void Graph(double a, double b) {
 		GraphPoints frame = new GraphPoints(this,a,b); // Call Graphic class
