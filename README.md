@@ -25,11 +25,16 @@ Features
 - Area- calculates the area of a Polynom in a given range 
 - AreaUnder- calculates the area under the X line
 
-Special edition
+Graph
 --------
-new! now you can make a graph of the polynom
+The graph is an open source library which can be found at <a href="https://github.com/eseifert/gral">https://github.com/eseifert/gral</a>
+The graph shows minimum and maximum points on the function
 
-more to read
+General info
 --------------
-- this project used GRAL open source: https://github.com/DanaSMor/gral.git
-- you can read more about Polynoms in Wiki: https://de.wikipedia.org/wiki/Polynom
+Read more in Wiki:
+- Polynomial: https://de.wikipedia.org/wiki/Polynom
+- Monomial: https://en.wikipedia.org/wiki/Polynomial
+- Derivative: https://en.wikipedia.org/wiki/Derivative
+- Riemann's Integral: https://en.wikipedia.org/wiki/Riemann_integral
+- Root: https://en.wikipedia.org/wiki/Properties_of_polynomial_roots
