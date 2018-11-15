@@ -27,8 +27,12 @@ Features
 
 Graph
 --------
-The graph is an open source library which can be found at <a href="https://github.com/eseifert/gral">https://github.com/eseifert/gral</a>
-The graph shows minimum and maximum points on the function
+The graph is an open source library which can be found at <a href="https://github.com/eseifert/gral">https://github.com/eseifert/gral</a>.
+
+The graph shows minimum and maximum points on the function:
+
+<img src="./img/Graph.PNG" width="350" height="300">
+
 
 General info
 --------------
