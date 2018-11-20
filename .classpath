@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="lib" path="C:/Users/Dana Mor/Downloads/gral-core-0.11.jar"/>
 	<classpathentry kind="src" path="img"/>
+	<classpathentry kind="lib" path="gral-core-0.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
